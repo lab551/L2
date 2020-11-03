@@ -14,10 +14,4 @@ readme = "README.md"
 rand = "0.7.3"
 rand_distr = "0.2.2"
 blas = "0.20.0"
-
-
-[target.x86_64-apple-darwin.dependencies]
-blas-src = { version = "0.6", features = ["accelerate"] }
-
-[target.x86_64-unknown-linux-gnu.dependencies]
 blas-src = { version = "0.6", features = ["openblas"] }
